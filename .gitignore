@@ -1,1 +1,4 @@
-data-dir/*
+data-dir/logs/*
+data-dir/nginx/*
+data-dir/storage/*
+.env
