@@ -1,0 +1,47 @@
+version: "3"
+services: 
+  serverapp:
+    container_name: app
+    build:
+      context: ./modsquare-server-app/
+      dockerfile: Dockerfile
+    volumes:
+      - ./data-dir/logs/:/app/logs
+      - ./data-dir/storage:/app/storage
+    working_dir: /app
+    command: npm start
+    environment: 
+      dbURI: "mongodb://db/modsquare_db"
+      NODE_ENV: "production"
+      LOG_LEVEL: "info" 
+      STORAGE_PATH: "/app/storage"
+      port: 3000
+    depends_on:
+      - mongodb
+    links:
+      - mongodb:db
+  reactapp:
+    container_name: frontend
+    build:
+      context: ./modsquare-react-app/
+      dockerfile: Dockerfile
+    environment: 
+      API_BASE_URL: "http://localhost/api"
+      IMAGES_PATH: "http://localhost"
+    depends_on:
+      - serverapp
+    links:
+      - serverapp:serverapp
+    volumes:
+      - ./data-dir/storage:/app/storage
+      - ./data-dir/nginx/logs:/var/log/nginx
+    ports: 
+      - 80:80
+  mongodb:
+    container_name: mongodb
+    restart: always
+    image: mongo:latest
+    volumes:
+      - ./data-dir:/data/mongodb
+    ports:
+      - "27017:27017"

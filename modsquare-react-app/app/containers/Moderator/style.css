@@ -1,0 +1,130 @@
+button.mybutton {
+  background: rgb(63, 81, 181);
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+button.mybutton:hover {
+  background: #fff;
+  color: rgb(63, 81, 181);
+}
+
+button.mybutton:before,
+button.mybutton:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(63, 81, 181);
+  transition: 400ms ease all;
+}
+
+button.mybutton:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button.mybutton:hover:before,
+button.mybutton:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+button.accept {
+  color: #fff;
+  border: none;
+  background-color: #298419;
+  font-size: 16px;
+  position: relative;
+  padding: 0 2em;
+  height: 40px;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+button.accept:hover {
+  background-color: #fff;
+  color: #298419;
+}
+
+button.accept:before,
+button.accept:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #298419;
+  /* #43a047; */
+  transition: 400ms ease all;
+}
+
+button.accept:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button.accept:hover:before,
+button.accept:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+
+button.reject {
+  background: rgb(157, 0, 56);
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+button.reject:hover {
+  background: #fff;
+  color: rgb(157, 0, 56);
+}
+
+button.reject:before,
+button.reject:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(157, 0, 56);
+  transition: 400ms ease all;
+}
+
+button.reject:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button.reject:hover:before,
+button.reject:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}

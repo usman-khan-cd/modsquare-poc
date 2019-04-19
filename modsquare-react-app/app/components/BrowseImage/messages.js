@@ -1,0 +1,16 @@
+/*
+ * BrowseImage Messages
+ *
+ * This contains all the text for the BrowseImage component.
+ */
+
+import { defineMessages } from 'react-intl';
+
+export const scope = 'app.components.BrowseImage';
+
+export default defineMessages({
+  header: {
+    id: `${scope}.header`,
+    defaultMessage: 'This is the BrowseImage component!',
+  },
+});

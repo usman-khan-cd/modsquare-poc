@@ -1,0 +1,9 @@
+.container {
+  height: 100vh;
+  margin: inherit;
+}
+
+.link-btn>a {
+  margin: 5px;
+  -webkit-appearance: none;
+}

@@ -1,0 +1,45 @@
+/*
+ *
+ * Uploader constants
+ *
+ */
+
+export const DEFAULT_ACTION = 'app/Uploader/DEFAULT_ACTION';
+
+export const FETCH_CONTENT_ACTION = 'app/Uploader/FETCH_CONTENT_ACTION';
+export const FETCH_CONTENT_SUCCESS_ACTION =
+    'app/Uploader/FETCH_CONTENT_SUCCESS_ACTION';
+export const UPLOADER_ERROR_ACTION = 'app/Uploader/UPLOADER_ERROR_ACTION';
+
+export const UPLOAD_IMAGE_ACTION = 'app/Uploader/UPLOAD_IMAGE_ACTION';
+export const UPLOAD_IMAGE_SUCCESS_ACTION =
+    'app/Uploader/UPLOAD_IMAGE_SUCCESS_ACTION';
+export const UPLOAD_IMAGE_ERROR_ACTION =
+    'app/Uploader/UPLOAD_IMAGE_ERROR_ACTION';
+
+export const UPLOAD_VIDEO_ACTION = 'app/Uploader/UPLOAD_VIDEO_ACTION';
+export const UPLOAD_VIDEO_SUCCESS_ACTION =
+    'app/Uploader/UPLOAD_VIDEO_SUCCESS_ACTION';
+export const UPLOAD_VIDEO_ERROR_ACTION =
+    'app/Uploader/UPLOAD_VIDEO_ERROR_ACTION';
+
+export const UPLOAD_IFRAME_ACTION = 'app/Uploader/UPLOAD_IFRAME_ACTION';
+export const UPLOAD_IFRAME_SUCCESS_ACTION =
+    'app/Uploader/UPLOAD_IFRMAE_SUCCESS_ACTION';
+
+
+
+
+export const UPLOAD_PARAGRAPH_ACTION = 'app/Uploader/UPLOAD_PARAGRAPH_ACTION';
+export const UPLOAD_PARAGRAPH_SUCCESS_ACTION =
+    'app/Uploader/UPLOAD_VIDEO_SUCCESS_ACTION';
+export const UPLOAD_PARAGRAPH_ERROR_ACTION =
+    'app/Uploader/UPLOAD_VIDEO_ERROR_ACTION';
+
+export const LOAD_MORE_ACTION = 'app/Uploader/LOAD_MORE_ACTION';
+export const LOAD_MORE_SUCCESS_ACTION = 'app/Uploader/LOAD_MORE_SUCCESS_ACTION';
+
+export const FILTER_ACTION = 'app/Uploader/FILTER_ACTION';
+export const FILTER_ACTION_SUCCESS = 'app/Uploader/FILTER_ACTION_SUCCESS';
+
+export const FILTER_CHANGE_ACTION = 'app/Uploader/FILTER_CHANGE_ACTION';
