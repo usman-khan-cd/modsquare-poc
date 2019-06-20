@@ -14,7 +14,7 @@ you can open <a href="http://localhost">http://localhost/</a>
 
 ## Important
 <ol>
-<li>Please make sure nothing is running on port 80 and 27017 as docker setup requries these ports.</li>
+<li>Please make sure nothing is running on port 80 (Nginx) and 27017 (MongoDB) as application will be launcing containers and exposing these ports.</li>
 <li>Apart from asked POC functionality, we have used our standard practices and they are very equally important. You can think modsquare-react-app as overkill but our idea here is to show our skills.</li>
 </ol>
 
